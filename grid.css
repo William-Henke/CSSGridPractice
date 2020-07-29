@@ -1,0 +1,35 @@
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 12px;
+    grid-template-areas: 
+        "header header header header"
+        "article1 article2 article3 ."
+        "footer footer footer footer";
+}
+
+#header {
+    grid-area: header;
+    justify-self: stretch;
+}
+
+#article1 {
+    grid-area: article1;
+    justify-self: stretch;
+}
+
+#article2 {
+    grid-area: article2;
+    justify-self: stretch;
+}
+
+#article3 {
+    grid-area: article3;
+    justify-self: stretch;
+}
+
+#footer {
+    grid-area: footer;
+    justify-self: stretch;
+}
